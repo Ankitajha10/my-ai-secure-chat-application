@@ -1,0 +1,60 @@
+# ===================================================
+# My AI – Git Ignore Configuration
+# ===================================================
+
+# Environment variables & secrets (CRITICAL: Never commit secrets)
+.env
+.env.*
+.env*.local
+!.env.example
+
+# SQLite Databases & Storage (Never commit user or chat data)
+*.db
+*.db-journal
+*.db-wal
+*.sqlite
+*.sqlite3
+users.db
+users.db*
+
+# User Uploads & Media (Isolated, private user attachments)
+uploads/*
+!uploads/.gitkeep
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+
+# Virtual environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Testing, Coverage & Build artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+build/
+dist/
+*.egg-info/
+
+# Logs & Debugging
+*.log
+logs/
+
+# Operating System & Editor Files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
